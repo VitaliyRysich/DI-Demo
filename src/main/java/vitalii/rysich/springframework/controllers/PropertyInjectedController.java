@@ -8,6 +8,7 @@ import vitalii.rysich.springframework.services.GreetingService;
 @Controller
 public class PropertyInjectedController {
     @Autowired
+    @Qualifier("greetingServiceImpl")
     public GreetingService greetingServiceImpl;//Qualifier by name
 
     public String sayHello(){
