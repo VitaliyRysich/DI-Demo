@@ -1,4 +1,4 @@
-package vitalii.rysich.springframework.controller;
+package vitalii.rysich.springframework.controllers;
 
 import org.springframework.stereotype.Controller;
 

@@ -3,7 +3,7 @@ package vitalii.rysich.springframework;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import vitalii.rysich.springframework.controller.MyController;
+import vitalii.rysich.springframework.controllers.MyController;
 
 @SpringBootApplication
 public class DiDemoApplication {
