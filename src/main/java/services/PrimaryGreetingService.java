@@ -3,6 +3,8 @@ package vitalii.rysich.springframework.services;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
+import services.GreetingRepository;
+import services.GreetingService;
 
 @Service
 @Primary //Main service in DI
