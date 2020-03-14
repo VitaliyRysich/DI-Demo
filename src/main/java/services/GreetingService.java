@@ -1,4 +1,4 @@
-package vitalii.rysich.springframework.services;
+package services;
 
 public interface GreetingService {
 

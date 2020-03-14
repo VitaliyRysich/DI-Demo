@@ -1,9 +1,8 @@
 package vitalii.rysich.springframework.controllers;
 
-import org.junit.Before;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import vitalii.rysich.springframework.services.GreetingServiceImpl;
+import services.GreetingServiceImpl;
 
 import static org.junit.jupiter.api.Assertions.*;
 
