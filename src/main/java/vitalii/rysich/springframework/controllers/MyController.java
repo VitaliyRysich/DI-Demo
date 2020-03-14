@@ -1,7 +1,7 @@
 package vitalii.rysich.springframework.controllers;
 
 import org.springframework.stereotype.Controller;
-import services.GreetingService;
+import vitalii.rysich.springframework.services.GreetingService;
 
 @Controller
 public class MyController {

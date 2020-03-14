@@ -10,7 +10,7 @@ import vitalii.rysich.springframework.controllers.PropertyInjectedController;
 import vitalii.rysich.springframework.controllers.SetterInjectionController;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"services","vitalii.rysich.springframework"})
+@ComponentScan(basePackages = {"vitalii.rysich.springframework.services","vitalii.rysich.springframework"})
 public class DiDemoApplication {
 
     public static void main(String[] args) {

@@ -3,21 +3,17 @@ package vitalii.rysich.springframework.services;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-import services.GreetingRepository;
-import services.GreetingService;
+import vitalii.rysich.springframework.repositories.GreetingRepository;
 
-@Service
-@Primary //Main service in DI
-@Profile({"en", "default"})
-public class PrimaryGreetingService implements GreetingService {
+public class PrimaryGermanGreetingService implements GreetingService {
     private GreetingRepository greetingRepository;
 
-    public PrimaryGreetingService(GreetingRepository greetingRepository) {
+    public PrimaryGermanGreetingService(GreetingRepository greetingRepository) {
         this.greetingRepository = greetingRepository;
     }
 
     @Override
     public String sayGreeting() {
-        return greetingRepository.getEnglishGreeting();
+        return greetingRepository.getGermanGreeting();
     }
 }

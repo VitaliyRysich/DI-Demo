@@ -1,4 +1,4 @@
-package services;
+package vitalii.rysich.springframework.repositories;
 
 import org.springframework.stereotype.Component;
 

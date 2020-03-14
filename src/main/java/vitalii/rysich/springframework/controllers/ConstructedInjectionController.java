@@ -2,7 +2,7 @@ package vitalii.rysich.springframework.controllers;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
-import services.GreetingService;
+import vitalii.rysich.springframework.services.GreetingService;
 @Controller
 public class ConstructedInjectionController {
     private GreetingService greetingService;
