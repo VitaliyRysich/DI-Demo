@@ -8,6 +8,7 @@ import vitalii.rysich.springframework.controllers.ConstructedInjectionController
 import vitalii.rysich.springframework.controllers.MyController;
 import vitalii.rysich.springframework.controllers.PropertyInjectedController;
 import vitalii.rysich.springframework.controllers.SetterInjectionController;
+import vitalii.rysich.springframework.examplebeans.FakeDataSource;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"vitalii.rysich.springframework.services","vitalii.rysich.springframework"})
@@ -19,9 +20,8 @@ public class DiDemoApplication {
         MyController controller = (MyController) context.getBean("myController");
         controller.hello();
 
-        System.out.println(context.getBean(PropertyInjectedController.class).sayHello());
-        System.out.println(context.getBean(SetterInjectionController.class).sayHello());
-        System.out.println(context.getBean(ConstructedInjectionController.class).sayHello());
+        FakeDataSource fakeDataSource = (FakeDataSource) context.getBean(FakeDataSource.class);
+        System.out.println(fakeDataSource);
     }
 
 }
