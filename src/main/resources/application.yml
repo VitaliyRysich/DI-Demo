@@ -1,0 +1,5 @@
+rysich:
+  jms:
+    username: yaml_Vitalii
+    password: yaml_somepass
+    dburl: yaml_SomeUrl
