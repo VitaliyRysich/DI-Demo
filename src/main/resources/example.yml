@@ -1,0 +1,36 @@
+# this is a comment
+
+name: Vitalii
+
+names:
+    - Vitalii
+    - John
+    - Ringo
+
+pound_sign: "#"
+
+book:
+    author: Joe Buck
+    publisher: random house
+
+truth: yes
+
+another_truth: True
+
+more_true: true
+
+false: no #No, false, FALSE
+
+string_val: "this is it's quote"
+
+colon_string: "my courses: one two three"
+
+include_new_lines: |
+  asdf sadf asdf
+  sadf asdf asdf
+  sdf asdf asdf
+
+ignore_new_lines: >
+  this is
+  just one long
+  string
