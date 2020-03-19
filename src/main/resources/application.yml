@@ -3,3 +3,11 @@ rysich:
     username: yaml_Vitalii
     password: yaml_somepass
     dburl: yaml_SomeUrl
+
+
+---
+spring:
+  profiles: de
+rysich:
+  jms:
+    username: yaml_Vitalii in Gernan
