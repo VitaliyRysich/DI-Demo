@@ -4,11 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
-import vitalii.rysich.springframework.controllers.ConstructedInjectionController;
 import vitalii.rysich.springframework.controllers.MyController;
-import vitalii.rysich.springframework.controllers.PropertyInjectedController;
-import vitalii.rysich.springframework.controllers.SetterInjectionController;
 import vitalii.rysich.springframework.examplebeans.FakeDataSource;
+import vitalii.rysich.springframework.examplebeans.FakeJmsBroker;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"vitalii.rysich.springframework.services","vitalii.rysich.springframework"})
@@ -22,6 +20,9 @@ public class DiDemoApplication {
 
         FakeDataSource fakeDataSource = (FakeDataSource) context.getBean(FakeDataSource.class);
         System.out.println(fakeDataSource);
+
+        FakeJmsBroker fakeJmsBroker = (FakeJmsBroker)context.getBean(FakeJmsBroker.class);
+        System.out.println(fakeJmsBroker);
     }
 
 }
